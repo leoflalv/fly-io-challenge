@@ -1,4 +1,4 @@
-workspace = { members = ["challenge-echo"] }
+workspace = { members = ["echo-challenge"] }
 [package]
 name = "fly-io-challenges"
 version = "0.1.0"

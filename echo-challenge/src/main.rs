@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use challenge_echo::handler::Handler;
+use echo_challenge::handler::Handler;
 use maelstrom::{Result, Runtime};
 
 fn main() -> Result<()> {
