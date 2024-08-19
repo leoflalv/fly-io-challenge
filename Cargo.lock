@@ -86,6 +86,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "challenge-echo"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "maelstrom-node",
+]
+
+[[package]]
 name = "env_logger"
 version = "0.10.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -101,11 +109,6 @@ dependencies = [
 [[package]]
 name = "fly-io-challenges"
 version = "0.1.0"
-dependencies = [
- "env_logger",
- "log",
- "maelstrom-node",
-]
 
 [[package]]
 name = "futures"
