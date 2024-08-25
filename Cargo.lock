@@ -558,6 +558,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7e2accd2c41a0e920d2abd91b2badcfa1da784662f54fbc47e0e3a51f1e2e1cf"
 
 [[package]]
+name = "single-node-broadcast-challenge"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "log",
+ "maelstrom-node",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
