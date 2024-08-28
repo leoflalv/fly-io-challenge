@@ -342,6 +342,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "multi-node-broadcast-challenge"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "log",
+ "maelstrom-node",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "object"
 version = "0.36.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
