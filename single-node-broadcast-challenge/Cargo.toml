@@ -1,9 +1,13 @@
-workspace = { members = ["echo-challenge", "single-node-broadcast-challenge", "unique-id-generator-challenge"] }
 [package]
-name = "fly-io-challenges"
+name = "single-node-broadcast-challenge"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+async-trait = "0.1.68"
+log = "0.4.22"
+maelstrom-node = "0.1.6"
+serde = "1.0.209"
+serde_json = "1.0.127"

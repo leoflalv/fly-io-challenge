@@ -2,6 +2,7 @@ use async_trait::async_trait;
 use maelstrom::{done, protocol::Message, Node, Result, Runtime};
 use ulid::Ulid;
 
+#[derive(Clone, Default)]
 pub struct Handler {}
 
 #[async_trait]
