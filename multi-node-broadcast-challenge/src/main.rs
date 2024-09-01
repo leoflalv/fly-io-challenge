@@ -1,7 +1,7 @@
 use std::sync::Arc;
 
 use maelstrom::{Result, Runtime};
-use single_node_broadcast_challenge::handler::Handler;
+use multi_node_broadcast_challenge::handler::Handler;
 
 fn main() -> Result<()> {
     Runtime::init(try_main())
