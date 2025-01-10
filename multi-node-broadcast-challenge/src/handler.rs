@@ -146,8 +146,6 @@ mod tests {
 
         handler.parse_to_graph(&value)?;
 
-        println!("{:?}", handler.topology.lock().unwrap());
-
         let graph = handler.topology.lock().unwrap();
         assert_eq!(graph.get("n1").unwrap(), &["n2", "n3"]);
         assert_eq!(graph.get("n2").unwrap(), &["n1"]);
