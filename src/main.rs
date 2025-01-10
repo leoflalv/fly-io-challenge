@@ -1,3 +1,3 @@
 fn main() {
-    println!("Fly.io challenge!!")
+    println!("Fly.io challenge!!");
 }
