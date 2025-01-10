@@ -128,3 +128,31 @@ impl Node for Handler {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use maelstrom::Result;
+    use serde_json::json;
+
+    #[test]
+    fn test_parse_to_graph() -> Result<()> {
+        let handler = Handler::default();
+        let value = json!({
+            "n1": ["n2", "n3"],
+            "n2": ["n1"],
+            "n3": ["n1"],
+        });
+
+        handler.parse_to_graph(&value)?;
+
+        println!("{:?}", handler.topology.lock().unwrap());
+
+        let graph = handler.topology.lock().unwrap();
+        assert_eq!(graph.get("n1").unwrap(), &["n2", "n3"]);
+        assert_eq!(graph.get("n2").unwrap(), &["n1"]);
+        assert_eq!(graph.get("n3").unwrap(), &["n1"]);
+
+        Ok(())
+    }
+}
