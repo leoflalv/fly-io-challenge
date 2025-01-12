@@ -119,6 +119,19 @@ dependencies = [
 ]
 
 [[package]]
+name = "fault-tolerant-broadcast"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "log",
+ "maelstrom-node",
+ "serde",
+ "serde_json",
+ "tokio",
+ "ulid",
+]
+
+[[package]]
 name = "fly-io-challenges"
 version = "0.1.0"
 

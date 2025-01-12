@@ -1,4 +1,11 @@
-workspace = { members = ["echo-challenge", "multi-node-broadcast-challenge", "single-node-broadcast-challenge", "unique-id-generator-challenge"] }
+workspace = { members = [
+  "echo-challenge",
+  "fault-tolerant-broadcast",
+  "multi-node-broadcast-challenge",
+  "single-node-broadcast-challenge",
+  "unique-id-generator-challenge",
+  "fault-tolerant-broadcast",
+] }
 [package]
 name = "fly-io-challenges"
 version = "0.1.0"
