@@ -5,6 +5,7 @@ workspace = { members = [
   "single-node-broadcast-challenge",
   "unique-id-generator-challenge",
   "fault-tolerant-broadcast",
+  "efficient-broadcast",
 ] }
 [package]
 name = "fly-io-challenges"
